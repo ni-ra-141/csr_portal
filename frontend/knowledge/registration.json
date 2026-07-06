@@ -1,0 +1,18 @@
+[
+  {
+    "topic": "Eligibility",
+    "content": "Each team must consist of three enrolled students."
+  },
+  {
+    "topic": "Verification",
+    "content": "The team leader must verify both email and mobile number using OTP."
+  },
+  {
+    "topic": "Duplicate Registration",
+    "content": "The same email address or phone number cannot be used for multiple registrations."
+  },
+  {
+    "topic": "Registration Window",
+    "content": "Registrations are accepted only during the official registration period."
+  }
+]

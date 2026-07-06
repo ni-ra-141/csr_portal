@@ -1,0 +1,14 @@
+[
+  {
+    "speaker": "ABC Consulting",
+    "topic": "How to Solve Business Cases",
+    "date": "10 August",
+    "recordingAvailable": true
+  },
+  {
+    "speaker": "Industry Expert",
+    "topic": "Presentation Skills",
+    "date": "12 August",
+    "recordingAvailable": false
+  }
+]

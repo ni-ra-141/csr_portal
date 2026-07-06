@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "category": "Registration",
+    "question": "Can I register more than once?",
+    "answer": "No. Each email address and mobile number can only be linked to one team registration."
+  },
+  {
+    "id": 2,
+    "category": "Registration",
+    "question": "I didn't receive my OTP.",
+    "answer": "Wait 60 seconds before requesting another OTP. Check your spam folder for email OTPs."
+  },
+  {
+    "id": 3,
+    "category": "Submission",
+    "question": "Can I edit my submission?",
+    "answer": "Yes, until the submission deadline."
+  }
+]
