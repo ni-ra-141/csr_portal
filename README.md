@@ -20,14 +20,18 @@ The application is structured as a unified **Next.js App Router** project that h
 ## Directory Structure
 
 ```text
-sy-internship/
+csr_portal/
+├── assets/              # Static assets (images, logos, videos)
 ├── database/            # Database schema & migrations
 │   ├── schema.sql       # Active PostgreSQL table definitions
 │   └── seed.sql         # Seed data for local prototyping
 ├── docs/                # Design specs & user guides
+│   ├── admin-guide.md
 │   ├── api-design.md
 │   ├── database-design.md
+│   ├── deployment-plan.md
 │   ├── requirements.md
+│   ├── user-roles.md
 │   └── workflow.md
 ├── frontend/            # Next.js Full-Stack Application
 │   ├── app/             # App Router pages and API routes
@@ -37,8 +41,11 @@ sy-internship/
 │   ├── components/      # UI components
 │   ├── knowledge/       # FAQ & programme knowledge for Gemini context
 │   └── lib/             # Database connection, Brevo & Gemini integration
-├── uploads/             # Directory for local file storage mocks
-└── package.json         # Root package file delegating to /frontend
+├── uploads/             # Directory for local file storage mocks (videos, decks)
+├── .env.example         # Template for environment variables
+├── .gitignore           # Git ignore rules
+├── package.json         # Root package file delegating to /frontend
+└── package-lock.json    # Dependency lockfile
 ```
 
 ---
@@ -48,7 +55,8 @@ sy-internship/
 ### Prerequisites
 
 - **Node.js:** Ensure Node.js is installed.
-- **PostgreSQL:** Ensure a PostgreSQL instance is running and has the tables defined in [database/schema.sql](file:///home/nishantraheja/sy-internship/database/schema.sql) configured.
+- **PostgreSQL:** Ensure a PostgreSQL instance is running and has the tables defined in [database/schema.sql](file:///home/nishantraheja/csr_portal/database/schema.sql) configured.
+
 
 ### Installation
 
