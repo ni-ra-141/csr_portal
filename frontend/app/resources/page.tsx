@@ -27,6 +27,9 @@ type Resource = {
 const stages: Stage[] = ["Preliminary Round", "Regional Round 1", "Grand Finale"];
 const kinds: Kind[] = ["Prep Material", "Masterclass", "Webinar Recording"];
 
+const stageFilterOptions: (Stage | "All")[] = ["All", ...stages];
+const kindFilterOptions: (Kind | "All")[] = ["All", ...kinds];
+
 const resources: Resource[] = [
   { id: "r1", title: "How to structure a business case from scratch", kind: "Prep Material", stage: "Preliminary Round", format: "PDF" },
   { id: "r2", title: "Framework library: market entry, pricing, ops", kind: "Prep Material", stage: "Preliminary Round", format: "PDF" },
@@ -127,7 +130,7 @@ export default function ResourcesPage() {
 
           {/* Stage filter */}
           <div className="mt-8 flex flex-wrap gap-2">
-            {(["All", ...stages] as const).map((s) => (
+            {stageFilterOptions.map((s) => (
               <button
                 key={s}
                 onClick={() => setStageFilter(s)}
@@ -144,7 +147,7 @@ export default function ResourcesPage() {
 
           {/* Kind filter */}
           <div className="mt-3 flex flex-wrap gap-2">
-            {(["All", ...kinds] as const).map((k) => (
+            {kindFilterOptions.map((k) => (
               <button
                 key={k}
                 onClick={() => setKindFilter(k)}

@@ -25,6 +25,8 @@ type FAQ = {
 
 const categories: Category[] = ["Registration", "Regional Round 1", "Resources", "General"];
 
+const categoryFilterOptions: (Category | "All")[] = ["All", ...categories];
+
 const faqs: FAQ[] = [
   {
     id: "f1",
@@ -133,7 +135,7 @@ export default function FAQPage() {
       <section className="py-16">
         <div className="mx-auto max-w-3xl px-6">
           <div className="flex flex-wrap gap-2">
-            {(["All", ...categories] as const).map((c) => (
+            {categoryFilterOptions.map((c) => (
               <button
                 key={c}
                 onClick={() => setActiveCategory(c)}
